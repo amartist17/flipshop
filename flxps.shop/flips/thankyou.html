@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from flipkaart.shop/thankyou.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2024 07:40:07 GMT -->
+<head>
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'../connect.facebook.net/en_US/fbevents.js');
+fbq('init', '7437325203015105');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=7437325203015105&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+    <meta charset="UTF-8">
+   <meta name="theme-color" content="#2874f0" id="themeColor">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=no">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+    .timeline-item:nth-child(1) .icon,
+.timeline-item:nth-child(1) .text,
+.timeline-item:nth-child(2) .icon,
+.timeline-item:nth-child(2) .text {
+    color: #2874f0;
+}
+
+.timeline-item:nth-child(3) .icon,
+.timeline-item:nth-child(3) .text,
+.timeline-item:nth-child(4) .icon,
+.timeline-item:nth-child(4) .text {
+    color: grey; /* Keep the color for "Order Shipped" */
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2874f0;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #2874f0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #450b39;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #2874f0;
+            border: 2px solid #2874f0;
+        }
+
+        .line {
+            flex-grow: 1;
+            height: 2px;
+            background-color: #2874f0;
+            margin: 0 10px;
+        }
+
+        .timeline-item:nth-child(2) ~ .line {
+            border-style: solid;
+        }
+
+        .timeline-item:nth-child(3) ~ .line {
+            border-style: dashed;
+        }
+
+        .timeline-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .timeline-item .icon {
+            margin-bottom: 10px;
+            color: #2874f0;
+            font-size: 24px;
+        }
+
+        .timeline-item .text {
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+
+        .delivery-date {
+            font-size: 12px;
+            color: #333;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="Z4_K_h" style="width:auto;height:auto;margin-right:10px;margin-left:10px" href="index-3.html">
+            <img class="logo" style="width:85px;" src="assets/images/flogo.svg"></img>
+        </a>
+        <h1><i class="fas fa-check-circle icon"></i> Thank You for Your Order!</h1>
+        <p>Your order has been successfully placed.</p>
+        <p><i class="fas fa-receipt icon"></i> Your Order ID: <span id="order-id">ORD581953</span></p>
+        <p><i class="fas fa-truck icon"></i><span id="shipment-details">Shipping Method: Express Shipping</span></p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <i class="fas fa-cart-arrow-down icon"></i>
+                <p class="text">Order Placed</p>
+            </div>
+            <div class="timeline-item">
+                <i class="fas fa-truck icon"></i>
+                <p class="text">Shipment in Progress</p>
+            </div>
+            <div class="timeline-item">
+                <i class="fas fa-box-open icon"></i>
+                <p class="text">Order Shipped</p>
+            </div>
+            <div class="timeline-item">
+                <i class="fas fa-check-circle icon"></i>
+                <p class="delivery-date">Estimated Delivery: 06-05-2024</p>
+            </div>
+        </div>
+        <button onclick="continueShopping()"><i class="fas fa-shopping-bag"></i> Continue Shopping</button>
+    </div>
+
+    <script>
+        function continueShopping() {
+            window.location.href = "index-3.html";
+        }
+    </script>
+
+</body>
+
+<!-- Mirrored from flipkaart.shop/thankyou.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2024 07:40:08 GMT -->
+</html>
