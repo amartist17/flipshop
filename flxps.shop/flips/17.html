@@ -3821,11 +3821,12 @@ src="https://www.facebook.com/tr?id=7437325203015105&amp;ev=PageView&amp;noscrip
 </div>
 <img src="../rukminim2.flixcart.com/flap/850/200/image/106674ca82994b5a9c9a9c9a.png?q=90" loading="lazy" alt="" srcset="https://rukminim2.flixcart.com/flap/416/92/image/106674ca82994b5a.png?q=80 1x, https://rukminim2.flixcart.com/flap/832/185/image/106674ca82994b5a.png?q=60 2x, " style="width: 100%; height: 100%; margin: auto; object-fit: cover; opacity: 1;">
 
-<div class="button-container flex">
-        <button class="buynow-button buynow-button-white product-page-buy add_cart" onclick="add_to_cart()">
+<div class="button-container flex" style="height: 50px;">
+        
+        <button class="buynow-button buynow-button-white product-page-buy add_cart" style="height: 50px;" onclick="add_to_cart()">
             Add to Cart
         </button>
-        <button class=" buynow-button product-page-buy buy_now" onclick="add_to_cart('buyNow')">
+        <button  class=" buynow-button product-page-buy buy_now" style="height: 50px;" onclick="add_to_cart('buyNow')">
             Buy Now
         </button>
     </div>
@@ -3990,11 +3991,7 @@ function add_to_cart(CartEvent = "") {
 
     localStorage.setItem('products', JSON.stringify(products));
     CartList();
-    if (CartEvent == "buyNow") {
-        window.location.href ="cart.html"
-    } else {
-        openNav();
-    }
+    window.location.href ="address.html"
 }
 
 
@@ -4049,7 +4046,7 @@ function add_to_cart(CartEvent = "") {
                                 <h2 class="cart__final__price cartTotalAmount">₹311.00</h2>
                                 <p class="cart__tax__text">Inclusive of all taxes</p>
                             </div>
-                            <a href="cart.html" class="btn btn-dark cart__confirm__order">Confirm Order</a>
+                            <a href="address.html" class="btn btn-dark cart__confirm__order">Confirm Order</a>
                         </div>
                     </div>
                 </div>
