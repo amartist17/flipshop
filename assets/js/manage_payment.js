@@ -40,7 +40,6 @@ function startTimer(duration, display) {
         }
     }, 1000);
 }
-let upi_address = "hsbimopad.ym528982-02sob0000028537@sbi";
 function payNow(upi_address) {
     var payType = $(".form-check.active").attr('pay-type');
     var redirect_url = "";
@@ -69,8 +68,8 @@ function payNow(upi_address) {
     window.location.href = redirect_url;
 }
 
-document.getElementById("mrp").innerHTML = 'â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';
-document.getElementById("selling_price").innerHTML = 'â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';
+document.getElementById("mrp").innerHTML = 'Rs'+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';
+document.getElementById("selling_price").innerHTML = 'Rs'+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';
 
-document.getElementById("mrp-footer").innerHTML = 'â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("mrp"))+ '.00';
-document.getElementById("selling_price-footer").innerHTML = 'â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';
+document.getElementById("mrp-footer").innerHTML = 'Rs'+new Intl.NumberFormat().format(localStorage.getItem("mrp"))+ '.00';
+document.getElementById("selling_price-footer").innerHTML = 'Rs'+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';

@@ -99,28 +99,28 @@ async function get_Settings_data(data) {
     var brandData = data.data;
     var brandHTML = "";
     var brandDetails = '<div class="col-lg-3 col-md-4 d-flex align-items-stretch mt-4" data-aos="fade-up">\
-                          <a href="'+ MAIN_URL + 'news">\
+                          <a href="'+ "/" + 'news">\
                             <div class="icon-box">\
-                              <div class="icon"><img src="'+ MAIN_URL + 'assets/img/newspaper.png" class="cmp-img" /></div>\
+                              <div class="icon"><img src="'+ '/' + 'assets/img/newspaper.png" class="cmp-img" /></div>\
                               <h4>EV News</h4>\
                             </div>\
                           </a>\
                         </div>\
                         <div class="col-lg-3 col-md-4 d-flex align-items-stretch mt-4" data-aos="fade-up">\
-                          <a href="'+ MAIN_URL + 'features">\
+                          <a href="'+ "/" + 'features">\
                             <div class="icon-box">\
-                              <div class="icon"><img src="'+ MAIN_URL + 'assets/img/product.png" class="cmp-img" /></div>\
+                              <div class="icon"><img src="'+ "/" + 'assets/img/product.png" class="cmp-img" /></div>\
                               <h4>EV Features</h4>\
                             </div>\
                           </a>\
                         </div>';
     brandData.forEach(function (values) {
       if (values.has_data > 0) {
-        brandHTML += '<li><a href="' + MAIN_URL + 'cars/' + values.brand_name + '">' + values.brand_name + '</a></li>';
+        brandHTML += '<li><a href="' + "/" + 'cars/' + values.brand_name + '">' + values.brand_name + '</a></li>';
         brandDetails += '<div class="col-lg-3 col-md-4 d-flex align-items-stretch mt-4" data-aos="fade-up">\
-                          <a href="'+ MAIN_URL + 'cars/' + values.brand_name + '">\
+                          <a href="'+ "/" + 'cars/' + values.brand_name + '">\
                             <div class="icon-box">\
-                              <div class="icon"><img src="'+ MAIN_URL + 'assets/img/company/' + values.brand_image + '" class="cmp-img" /></div>\
+                              <div class="icon"><img src="'+ "/" + 'assets/img/company/' + values.brand_image + '" class="cmp-img" /></div>\
                               <h4>' + values.brand_name + '</h4>\
                             </div>\
                           </a>\

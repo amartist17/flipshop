@@ -33,7 +33,7 @@ function btnContinue() {
     // else {
     //     window.location.href = MAIN_URL + "payment";
     // }
-    window.location.href = MAIN_URL + "payment.php";
+    window.location.href = "./payment.html";
 }
 
     
@@ -45,20 +45,20 @@ document.getElementById("customer-contact").innerHTML=(address.number);
 
 var disc = 100 - ((localStorage.getItem("price") * 100) / localStorage.getItem("mrp")).toFixed(0);
 document.getElementById("product-title").innerHTML = localStorage.getItem("title");
-document.getElementById("mrp").innerHTML = 'â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("mrp"))+ '.00';
-document.getElementById("selling_price").innerHTML = 'â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';
+document.getElementById("mrp").innerHTML = 'Rs'+new Intl.NumberFormat().format(localStorage.getItem("mrp"))+ '.00';
+document.getElementById("selling_price").innerHTML = ''+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';
 document.getElementById("discount").innerHTML = disc+'%';
 $("#item_image").prop('src', localStorage.getItem("image"));
 
 
-document.getElementById("total-price").innerHTML = 'â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("mrp"))+ '.00';
-document.getElementById("disc-price").innerHTML = '- â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("mrp")-localStorage.getItem("price"))+ '.00';
-document.getElementById("total-price1").innerHTML = 'â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';
-document.getElementById("discount-amt").innerHTML = '- â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("mrp")-localStorage.getItem("price"))+ '.00';
+document.getElementById("total-price").innerHTML = 'Rs'+new Intl.NumberFormat().format(localStorage.getItem("mrp"))+ '.00';
+document.getElementById("disc-price").innerHTML = '- Rs'+new Intl.NumberFormat().format(localStorage.getItem("mrp")-localStorage.getItem("price"))+ '.00';
+document.getElementById("total-price1").innerHTML = 'Rs'+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';
+document.getElementById("discount-amt").innerHTML = '- Rs'+new Intl.NumberFormat().format(localStorage.getItem("mrp")-localStorage.getItem("price"))+ '.00';
 
 
-document.getElementById("mrp-footer").innerHTML = 'â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("mrp"))+ '.00';
-document.getElementById("selling_price-footer").innerHTML = 'â‚¹'+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';
+document.getElementById("mrp-footer").innerHTML = 'Rs'+new Intl.NumberFormat().format(localStorage.getItem("mrp"))+ '.00';
+document.getElementById("selling_price-footer").innerHTML = 'Rs'+new Intl.NumberFormat().format(localStorage.getItem("price"))+ '.00';
 
 
 document.getElementById("product-detail").innerHTML = localStorage.getItem("selected_color")+localStorage.getItem("selected_size")+localStorage.getItem("selected_storage");

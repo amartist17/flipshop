@@ -12,7 +12,7 @@ $(document).ready(function () {
             state: $("#state :selected").text()
         };
         localStorage.setItem("address", JSON.stringify(address));
-        window.location.href = MAIN_URL + "order-summary.php";
+        window.location.href =  "./order-summary.html";
     });
     $("#back_btn").on("click", function () {
         history.back();
